@@ -4,13 +4,14 @@
 //
 //  Created by yemre on 27.11.2024.
 //
+import Foundation
 
 struct Todo : Codable, Identifiable {
     let id : UUID
     
-    let userId : Int
+    let userId : UUID
     let status : Status
-    let PrioriTY : Priority
+    let priority : Priority
     
     let title : String
     let content : String
